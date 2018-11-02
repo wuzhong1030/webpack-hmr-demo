@@ -10,6 +10,12 @@ module.exports = {
     },
 
     devServer: {
-        hot: true
-    }
+        hot: true,
+        // lazy: true,
+        // inline: false
+    },
+
+    plugins: [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 }
